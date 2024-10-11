@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Viewport meta tag -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <title>Document</title>
+    <link rel="stylesheet" href="forp3.css">
+    <style>
+        html, body {
+            margin: 0; /* Remove default margin */
+            padding: 0; /* Remove default padding */
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            overflow: hidden; /* Prevent scrolling */
+            display: flex; /* Use flexbox */
+            justify-content: center; /* Center horizontally */
+            align-items: center; /* Center vertically */
+            background-color: #f0f0f0; /* Example background color */
+        }
+
+        .main {
+            text-align: center; /* Center text inside main */
+            margin-top: -20px; /* Optional padding */
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="txt">
+            <h3><b>A popular Dussehra greeting in Karnataka is "ಬನ್ನಿ ಕೊಡ್ತೀನೆ, ಬಂಗಾರ ಹಾಗಲಿ"<br> which means <br>"Let me give you leaves of Banni tree, and let them bring gold to you",
+<br>    On behalf of the Dept of CSE, Sending warm wishes to  <span id="staffName"></span> and family members with much love and respect on this auspicious occasion VijayaDashami🙏.
+            </b></h3>
+        </div>
+    </div>
+    <script>
+        // Retrieve the selected staff name from localStorage
+        const selectedStaff = localStorage.getItem('selectedStaff');
+
+        // Display the staff name if it's available
+        if (selectedStaff) {
+            document.getElementById('staffName').textContent = selectedStaff;
+        } else {
+            document.getElementById('staffName').textContent = 'Guest'; // Default text if no name is selected
+        }
+    </script>
+</body>
+</html>

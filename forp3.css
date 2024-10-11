@@ -1,0 +1,30 @@
+body {
+    background-image: url("im.jpg") ; 
+    /* Your background image */
+    background-repeat: no-repeat;     /* Prevents repeating */
+    background-size: cover;           /* Covers the entire viewport */
+    background-position: center; 
+
+    /* Centers the image */
+}
+
+.main{
+    backdrop-filter: 20px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 1px 1px 10px 1px;
+    border-radius: 20px;
+    border: 2px solid #0e0d0d;
+    margin: 40px;
+    margin-top: 180px;
+    
+    margin-left: 30px;
+}
+.txt{
+    padding: 15px;
+    margin-top: 10px;
+    align-items: center;
+    justify-content: center; 
+    font-size: 1.1rem;
+
+}
